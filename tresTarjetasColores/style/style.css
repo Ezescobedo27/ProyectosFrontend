@@ -1,0 +1,101 @@
+/* Importamos la URL */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgroundHeadingsButtons: hsl(0, 0%, 95%);
+}
+
+
+/*  */
+
+/* Valores por defecto del contenedor */
+.container {
+    display: grid;
+    margin: auto;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-1, .card-2, .card-3 {
+    height: 350px;
+}
+/* Agregamos los colores de fondo */
+.card-1 {
+    background-color: var(--Brightorange);
+}
+
+.card-2 {
+    background-color: var(--Darkcyan);
+}
+
+.card-3 {
+    background-color: var(--Verydarkcyan);
+}
+
+.content {
+    margin: auto;
+    
+    padding: 30px;
+    width: 70%;
+    height: 80%;
+}
+
+.img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-family: Big Shoulders Display;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: var(--backgroundHeadingsButtons);
+
+}
+
+
+.p {
+    font-size: .75em;
+    line-height: 1.5;
+    height: 100px;
+    color: var(--paragraphs);
+}
+
+.btn {
+    display: grid;
+    cursor: pointer;
+    
+    border-radius: 20px;
+    font-size: .5em;
+    padding:  10px 22px;
+    border: 0;
+
+    background-color: white;
+}
+
+/* Agregamos el color a los botones */
+.card-1 .content .btn {
+    color: var(--Brightorange);
+}
+
+.card-2 .content .btn {
+    color: var(--Darkcyan);
+}
+
+.card-3 .content .btn {
+    color: var(--Verydarkcyan);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

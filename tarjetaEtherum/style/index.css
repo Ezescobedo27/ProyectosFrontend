@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root { 
+--SoftBlue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--mainBG: hsl(217, 54%, 11%);
+--cardBG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+    font-size: 18px;
+    font-family: Outfit;
+}
+
+body {
+    background-color: var(--mainBG);
+}
+.container {
+    margin: auto;
+    margin-top: 130px;
+
+
+    border-radius: 15px;
+    width: 375px;
+
+    border: 10px solid var(--mainBG);
+    background-color: var(--line);
+}
+
+.container .card-container {
+    width: 90%;
+    margin: auto;
+}
+
+.container .card-container .section-title .encerrados img{
+    display: flex;
+    margin: auto;
+
+    width: 330px;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+
+/* Encerrados contiene el div eye y la img, convertimos a relativo para manipular de manera absoluta los otros elementos */
+.container .card-container .section-title .encerrados {
+    position: relative
+}
+
+/* Este es el div eye que movemos evactamente donde esta la imagen y le damos una opacidad de 0, despues de agregamos un opacitiy 0 en el hover */
+.container .card-container .section-title .encerrados .eye{
+    position:absolute;
+    margin-top: 10px;
+    top: -20px;
+    right: 3px;
+    width: 340px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(49, 46, 46);
+    background-color: var(--Cyan);
+    opacity: 0.7;
+    background-image: url("/nft-preview-card-component-main/images/icon-view.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.container .card-container .section-title .encerrados .eye:hover{
+    opacity: .8;
+    cursor: pointer
+}
+
+
+.container .card-container .section-title .h1-section__title {
+    color: white;
+    font-size: 1.3em;
+}
+
+.container .card-container .section-title .h1-section__title:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.container .card-container .section-title .h2-section__title {
+    color: var(--SoftBlue);
+    font-weight: 100;
+    font-size: .9em;
+}
+
+.container .card-container .section-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card-container .section-info 
+.container-section__info-1,
+.container-section__info-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px   ;
+}
+
+.container .card-container .section-info .container-section__info-1 {
+    color: var(--Cyan);
+    letter-spacing: 1px;
+}
+
+.container .card-container .section-info .container-section__info-2 {
+    color: var(--SoftBlue);
+}
+
+.container .card-container .section-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px   ;
+}
+
+.container .card-container .section-profile .img-section__profile {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--SoftBlue);
+    border-radius: 20px;
+}
+
+
+.container .card-container .section-profile .h4-section__profile {
+    color: var(--SoftBlue);
+}
+
+.container .card-container .section-profile .h4-section__profile  span {
+    color: white;
+}
+
+.container .card-container .section-profile .h4-section__profile  span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        margin-top: 0;
+    }
+}
