@@ -1,0 +1,99 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+    background-color: gray;
+
+}
+
+/* github */
+.github {
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+
+    box-shadow: 2px 2px 3px black;
+    background-color: black;
+}
+/* search */
+
+.search {
+    margin-bottom: 2rem;
+    
+}
+.search input {
+    border: none;
+    
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* usercard */
+.usercard {
+    
+    font-size: 1.5rem;
+    
+    color: white;
+}
+
+.usercard img {
+    display: block;
+
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.usercard h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.usercard p {
+    text-align: center;
+}
+/* data */
+.data {
+    margin-bottom: 2rem;
+}
+.data ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* REPOS */
+.repos {
+    text-align: center;
+}
+
+.repos a {
+    text-decoration: none;
+    display: inline-block;
+    
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    margin: 0 1rem;
+
+    box-shadow: 2px 2px 3px rgba(0,0,0,.7);
+
+}
