@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de templates</title>
+    <script src="script.js" defer></script>
+    <style>
+
+        body {
+            height: 100vh;
+            background-color: #f1faee;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .h1--comida {
+            text-align: center;
+            font-size: 2.4em;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .card {
+            border: 1px solid black;
+            height: 260px;
+            padding: 10px;
+            background-color: #e63946;
+            box-shadow: 0px 1px 2px black;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            color: white;
+            font-size: 1.6em;
+        }
+
+        .card button {
+            padding: 10px;
+            background: transparent;
+            border: 1px solid black;
+            border-radius: 50%;
+
+        }
+        .card button:hover {
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: .45s ease;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1--comida">COMIDA</h1>
+    <div id="container">
+        
+    </div>
+    <template id="template">
+        <div class="">
+            <img src="https://www.cocinacaserayfacil.net/wp-content/uploads/2020/03/Recetas-faciles-de-cocinar-y-sobrevivir-en-casa-al-coronavirus_2.jpg" alt="Comida">
+            <h2>Comida: </h2>
+            <button id="button">Comprar</button>
+        </div> 
+    </template>
+</body>
+</html>
